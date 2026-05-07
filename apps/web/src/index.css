@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 9% 98%; /* Stone Gray/Off-white */
+    --foreground: 240 10% 15%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 15%;
+    
+    --primary: 142 71% 25%; /* Forest Green */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 28 45% 44%; /* Earthy Brown */
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 60 5% 90%;
+    --muted-foreground: 240 5% 40%;
+    
+    --accent: 199 89% 48%; /* Sky Blue */
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 60 5% 85%;
+    --input: 60 5% 85%;
+    --ring: 142 71% 25%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 240 10% 10%;
+    --foreground: 60 9% 98%;
+    
+    --card: 240 10% 12%;
+    --card-foreground: 60 9% 98%;
+    
+    --popover: 240 10% 12%;
+    --popover-foreground: 60 9% 98%;
+    
+    --primary: 142 60% 40%;
+    --primary-foreground: 240 10% 10%;
+    
+    --secondary: 28 40% 50%;
+    --secondary-foreground: 240 10% 10%;
+    
+    --muted: 240 10% 20%;
+    --muted-foreground: 60 5% 70%;
+    
+    --accent: 199 80% 60%;
+    --accent-foreground: 240 10% 10%;
+    
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 240 10% 20%;
+    --input: 240 10% 20%;
+    --ring: 142 60% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'DM Sans', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+  }
+}
